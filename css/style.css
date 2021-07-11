@@ -117,6 +117,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-link {
   font-family: var(--main-font);
@@ -125,6 +128,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-link {
@@ -139,6 +145,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel-link {
@@ -291,10 +300,35 @@ img {
 }
 /*_________ AND SECTION1_________*/
 /*_________ SECTION2_________*/
+.wrapper-li-img{
+  position: relative;
+}
+
+.title-img{
+  position: absolute;
+  width: 100%;
+  min-height: 70px;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--hover-focus-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 .list-img {
   display: flex;
 }
-.list-img .li-img:not(:nth-child(3n)) {
+.list-img .li-img:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -365,6 +399,7 @@ img {
   width: 20px;
   height: 20px;
   fill: currentColor;
+
 }
 .social-list-link {
   display: flex;
@@ -374,12 +409,16 @@ img {
   height: 44px;
   border-radius: 50%;
   color: #afb1b8;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-item .social-list-link:hover,
 .social-list-item .social-list-link:focus {
   color: var(--hover-focus-text-color);
   background-color: var(--hover-focus-color);
 }
+
 /*_________ AND SECTION3_________*
 /*_________ SECTION4_________*/
 .constant-clients {
@@ -407,6 +446,10 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   color: #afb1b8;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .constant-logo-icon {
   fill: currentColor;
@@ -508,6 +551,11 @@ img {
   border-radius: 50%;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .footer-social-list .footer-social-li:not(:last-child) {
   margin-right: 10px;
@@ -574,6 +622,9 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-btn:hover,
 .nav-btn:focus {
@@ -655,12 +706,18 @@ img {
 }
 .portfolio-link {
   display: block;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
+
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 .portfolio-link-overlay:hover .overlay,
 .portfolio-link-overlay:focus .overlay{
